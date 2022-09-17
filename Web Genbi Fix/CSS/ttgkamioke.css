@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    /* height: 3457px; */
+    background: #F0F0F0;
+}
+/* Navbar */
+
+nav {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/Mask\ group\ \(2\).png');
+    background-size: cover;
+    background-position:start;
+    background-repeat:no-repeat;
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 20px;
+}
+
+.navbar-nav {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+    width: 100%;
+    position:absolute;
+    top: -100vh;
+    left: 0;
+    background:rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover {
+    color: gray;
+}
+
+.mobile-size {
+    top: 0;
+}
+.bi-list{
+    position: absolute;
+    top:30px;
+    right:50px;
+    font-size:40px;
+    color:white;
+    z-index: 1;
+}
+.judul {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    top:300px;
+    left: 100px;
+    color: white;
+}
+.judul h1 {
+    font-size: 7vmin;
+    font-weight: bold;
+}
+.judul p {
+    font-size: 16px;
+}
+
+/* sejarah */
+.sejarah{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.sejarah .box-sejarah{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sejarah .box-sejarah .box:nth-child(1){
+    position: relative ;
+    display: flex; 
+    z-index: 1;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.sejarah .box-sejarah .box:nth-child(2){
+    position: relative;
+    padding: 5% 0 5% 25%;
+    background:#26648B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+} 
+
+.sejarah .box-sejarah .box:nth-child(2) a{
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #FFE3B3;
+    color: #26648B;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+} 
+
+/* VIsi GenBI */
+.visi {
+    position: relative;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    text-align: center;
+    margin: 2rem auto;
+
+}
+.visi h2 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/* Misi GenBI */
+.box-misi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #26648B;
+    color: white;
+    padding-top: 31px;
+}
+.box-misi h2, .box-tujuan h2 {
+    font-size: 36px;
+    padding-top: 2%;
+    font-weight: bolder;
+}
+.misi{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+.misi h4, .tujuan-tulis h4{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.misi p{
+    font-size: 15px;
+    font-weight: 200;
+}
+.misi h4, .misi p, .tujuan-tulis h4, .tujuan-tulis p {
+    text-align: center;
+}
+.misi img, .tujuan-tulis img{
+    display: block;
+    margin: 0 auto;
+}
+.misi-1, .misi-2, .misi-3, .misi-4 {
+    width:20%;
+}
+
+/* Tujuan */
+.box-tujuan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 0 3% 0;
+}
+.tujuan-tulis {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 2em;
+    column-gap: 6em;
+}
+.tujuan-1, .tujuan-2, .tujuan-3 {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 196px;
+}
+.logo-footer {
+    margin-left: 100px;
+    padding-top: 70px;
+}
+.background-footer {
+    position: relative;
+    width: 73%;
+    height: 340px;
+    margin-left: auto;
+    background: #26648B;
+}
+
+@media only screen and (min-width:1158px){
+    .navbar-nav{
+        flex-direction: row;
+        padding: 3%;
+        column-gap:28px;
+        min-height:80px;
+        padding-right:50px;
+        justify-content: flex-end;
+        top:0;
+        background: transparent;
+    }
+
+    .bi-list{
+        display:none;
+    }
+
+   
+}
+
+@media screen and (max-width: 1200px) {
+    .sejarah .box-sejarah .box:nth-child(1) img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .sejarah .box-sejarah {
+        flex-direction: column;
+    }
+
+    nav{
+        background-size: cover;
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .judul{
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        text-align: center;
+    }
+
+    .judul h1{
+        font-size:24px;
+    }
+    .judul p{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sejarah .box-sejarah .box:nth-child(1){
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .sejarah .box-sejarah .box:nth-child(2){
+        padding: 0;
+        padding-top: 20%;
+        margin-top: -20%;
+        font-size: 12px;
+        padding-bottom: 10%;
+    }
+
+    .box h2{
+        padding: 10px;
+    }
+
+    .box p{
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .box a{
+        margin-left: 10px;
+    }
+
+    .misi-1, .misi-2, .misi-3, .misi-4{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .tujuan-tulis{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 290px) {
+    header .hero h1{
+        font-size: 20px;
+    }  
+    
+    header .hero p{
+        font-size: 10px;
+    }
+}
+
+
+

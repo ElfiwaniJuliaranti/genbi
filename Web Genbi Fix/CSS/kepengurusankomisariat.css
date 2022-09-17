@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.top {
+    min-width: 100%;
+}
+/* Navbar */
+.navbar {
+    /* width: 100vw; */
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/P1013282\ 1.svg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    column-gap: 300px;
+    padding-top: 20px;
+}
+.navbar-nav {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+    width: 100%;
+    position:absolute;
+    top: -100vh;
+    left: 0;
+    background:rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.mobile-size {
+    top: 0;
+}
+.bi-list{
+    position: absolute;
+    top:30px;
+    right:50px;
+    font-size:40px;
+    color:white;
+    z-index: 1;
+}
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover {
+    color: gray;
+}
+.logo {
+    position:absolute;
+    margin-top: 80px;
+    margin-left: 7%;
+}
+.judul {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    padding: 186px 0 0 100px;
+}
+
+/* Struktur Komisariat */
+.struktur-komisariat {
+    width: 100%;
+    /* height: 1551px; */
+}
+.page-struktur {
+    position:absolute;
+    height: 24px;
+    padding: 52px 0 0 100px;  
+}
+.page-struktur .nav-link {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 63px;
+}
+.page-struktur .nav-link:hover {
+    border-bottom: 3px solid #26648B;
+}
+.judul-struktur p {
+    padding-top: 126px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+}
+.grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 70px auto;
+    grid-gap: 64px;
+    justify-content: space-between;
+
+}   
+img {
+    margin-top: 30px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.konten {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.grid > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 181px;
+}
+.logo-footer {
+    /* margin-left: 130px; */
+    padding-top: 70px;
+}
+.background-footer {
+    position: relative;
+    width: 70%;
+    height: 340px;
+    margin-left: auto;
+    background: #26648B;
+}
+
+@media only screen and (min-width:1158px){
+    .navbar-nav{
+        flex-direction: row;
+        padding: 3%;
+        column-gap:28px;
+        min-height:80px;
+        padding-right:50px;
+        justify-content: flex-end;
+        top:0;
+        background: transparent;
+
+    }
+    .bi-list{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:959px){
+    .box-korwil,
+    .box-wakoor,
+    .box-sekum,
+    .box-bendum{
+        flex-direction:column;
+        height:370px;
+        width:90%;
+    }
+
+    .box-korwil .box-sekum .box-kominfo{
+        margin-left: 0;
+        
+    }
+
+    .box-kominfo{
+        flex-direction:column;
+        height:450px;
+        width:90%;
+        row-gap:15px;
+    }
+    .box-kominfo .kominfo{
+        width:100%;
+        text-align:center;
+        font-size: 24px;
+    }
+    .box-korwil .korwil,
+    .box-wakoor .wakoor,
+    .box-sekum .sekum,
+    .box-bendum .bendum{
+        width:100%;
+        text-align:center;
+        font-size:5vmin;
+    }
+    .box-sekum .sekum{
+        position:absolute;
+        top:30px;
+    }
+    .box-sekum{
+        padding:0;
+        position:relative;
+    }
+    .box-sekum .foto-sekum1{
+        position:absolute;
+        left:53%;
+        bottom:40px;
+    }
+    .box-sekum .foto-sekum2{
+        position:absolute;
+        right:53%;
+        bottom:40px;
+    }
+    .box-bendum .bendum{
+        position:absolute;
+        top:20px;
+        padding:0;
+    }
+    .box-bendum{
+        padding:0;
+        position:relative;
+    }
+    .box-bendum .foto-bendum1{
+        position:absolute;
+        left:53%;
+        bottom:40px;
+    }
+    .box-bendum .foto-bendum2{
+        position:absolute;
+        right:53%;
+        bottom:40px;
+    }
+    .judul{
+        padding:30px;
+        padding-top:220px;
+        font-size: 32px;
+    }
+    .bi-list{
+        margin-right:-20px;
+    }
+    .judul-struktur p{
+        font-size:5vmin;
+        /* margin:10px; */
+        /* padding-top: 25%; */
+    }
+    .page-struktur{
+    padding-left:30px;
+    flex-direction: column;
+    }
+
+    .page-struktur .nav-link{
+        font-size: 12px;
+        margin-right: 40px;
+    }
+}
+@media only screen and (max-width: 569px){
+    .page-struktur{
+        flex-direction:row;
+    }
+
+    .page-struktur .nav-link{
+        font-size: 11px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:1300px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        width: 90%;
+    }
+    /* .page-struktur .nav-link{
+        font-size: 12px;
+        margin-right: 20px;
+    } */
+}
+@media (max-width:1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+    }
+}
+@media (max-width:670px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 40%;
+        margin: 70px auto;
+    }
+}
