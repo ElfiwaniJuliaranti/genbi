@@ -16,24 +16,51 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- Link JQuery -->
     <link rel="stylesheet" href="css/jquery.hiSlider.min.css">
-</head>
+    <script src="https://kit.fontawesome.com/451d56a271.js" crossorigin="anonymous"></script>
+  </head>
 <body>
     <!-- Navbar -->  
     <nav>
       <!-- <div class="header"> -->
         <div class="logo">
-            <img src="assets/Group 14.svg" alt="">
+            <img src="./assets/Group 2.png" alt="">
         </div>
         <div class="navbar-nav menu">
-          <a class="nav-link" href="#">Beranda</a>
-          <a class="nav-link" href="#">Tentang Kami</a>
-          <a class="nav-link" href="#">Beasiswa BI</a>
-          <a class="nav-link" href="#">Program</a>
-          <a class="nav-link" href="#">Genbi Store</a>
-          <a class="nav-link" href="#">Karya</a>
-          <a class="nav-link" href="#">Galeri Kegiatan</a>
-          <a class="nav-link" href="#">QnA</a>
-      </div>
+          <a class="nav-link" href="/">Beranda</a>
+          <div class="dropdown">
+            <button class="dropbtn">Tentang Kami
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/sejarah-genbi">Sejarah GenBI</a>
+              <a href="/koordinator-wilayah">Struktur Kepengurusan GenBI</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Beasiswa BI
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/tentang-bi">Tentang BI</a>
+              <a href="/tentang-beasiswa-bi">Tentang Beasiswa BI</a>
+              <a href="/beasiswa-d3">Syarat Pendaftaran Beasiswa BI</a>
+              <a href="/mekanisme-pelaksanaan-program">Mekanisme Pelaksanaan Program Beasiswa BI</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Program
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/event-genbi">Event</a>
+              <a href="/berita-genbi">Berita</a>
+            </div>
+          </div>
+          <a class="nav-link" href="/store">GenBI Store</a>
+          <a class="nav-link" href="/karya-genbi">Karya</a>
+          <a class="nav-link" href="/galeri-kegiatan">Galeri Kegiatan</a>
+          <a class="nav-link" href="/faq">QnA</a>
+        </div>
         <!-- <ul class="links">
             <li><a href="">Beranda</a></li>
             <li><a href="">Tentang Kami</a></li>
@@ -58,7 +85,7 @@
             <h2>Sejarah GenBI</h2>
         </div>
         <div class="box-foto">
-            <img src="assets/DSC_0022 1.svg" alt="" style="border-radius: 20px;">
+            <img src="./assets/Mask group (1).png" alt="" style="border-radius: 20px;">
             <div class="ket-sej">
                 <p>Generasi Baru Indonesia a.k.a GenBI ialah sebuah komunitas yang terdiri dari beberapa kumpulan mahasiswa dari berbagai universitas pada sebuah wilayah yang terpilih dan menang sebagai penerima beasiswa Bank Indonesia.</p>
                 <p>Pada saat itu muncullah beberapa kesepakatan, diantaranya adalah; nama dan lambang untuk Komunitas Penerima Beasiswa Bank Indonesia adalah Generasi Baru Indonesia (GenBI), membentuk tim perumus dan kelompok kerja yang bertugas untuk merencanakan pertemuan umum dan deklarasi yang akan dilaksanakan pada 11 November 2011 (11-11-11) serta menyusun rancangan Konstitusi Organisasi (Statuta, AD dan ART).</p>
@@ -74,7 +101,7 @@
     <div class="swiper event">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="assets/P1010198 1.svg" alt="">
+            <img src="./assets/P1010198 1.png" alt="">
             <div class="ket-event">
                 <p>Quis blandit turpis cursus in hac habitasse platea dictumst quisque</p>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et egestas quis ipsum suspendisse. Sed libero enim sed faucibus turpis. Turpis massa tincidunt dui ut ornare lectus sit amet. Ut sem viverra aliquet eget sit amet tellus cras adipiscing.</p>
@@ -82,7 +109,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="assets/P1010198 1.svg" alt="">
+            <img src="./assets/P1010198 1.png" alt="">
             <div class="ket-event">
                 <p>Quis blandit turpis cursus in hac habitasse platea dictumst quisque</p>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et egestas quis ipsum suspendisse. Sed libero enim sed faucibus turpis. Turpis massa tincidunt dui ut ornare lectus sit amet. Ut sem viverra aliquet eget sit amet tellus cras adipiscing.</p>
@@ -132,26 +159,51 @@
     <div class="swiper kegiatan">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="assets/IMG_0338.JPG" />
+          <img src="./assets/galeri1.jpg" />
         </div>
         <div class="swiper-slide">
-          <img src="assets/GENBI V 1.svg" />
+          <img src="./assets/galeri2.JPG" />
         </div>
         <div class="swiper-slide">
-          <img src="assets/Asesmen & BI Mengajar3.jpg" />
+          <img src="./assets/galeri 3.png" />
         </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-      <div class="logo-footer">
-          <img src="assets/logo genbi 1.svg">
+<footer class="footer">
+  <div class="footer-left">
+      <img src="./assets/logo genbi 1.svg" alt="">
+  </div>
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Padang</span>Sumatera Barat, Indonesia</p>
       </div>
-      <div class="background-footer">
-      </div>      
-    </div>
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+62 812-345-678</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="#">support@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-about"><span>About</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, beatae.</p>
+      <div class="footer-media">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+          <a href="#"><i class="fa fa-spotify"></i></a>
+      </div>
+  </div>
+</footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -194,7 +246,6 @@
     <script>
       const humberger = document.querySelector('.bi-list');
       const links = document.querySelector('.navbar-nav');
-
       humberger.addEventListener('click', ()=>{
         links.classList.toggle('mobile-size');
       })
